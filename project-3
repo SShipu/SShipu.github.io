@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <title>Case Study of Boreal Coffee Clone</title>
+  <title>Case Study of Heavy Metal T-Shirt</title>
   <meta name="description" content="Case study page of Project" />
 
   <link href='https://d33wubrfki0l68.cloudfront.net/css/b14c4959d2141192dcad9a56bef700e9b47ebb62/css/style.css' rel='stylesheet'/>
@@ -23,10 +23,10 @@
     <div class="header__content">
       <div class="header__logo-container">
         <div class="header__logo-img-cont">
-          <img src="https://i.postimg.cc/TwY74D31/profile-pic-8.png" alt="Ram Maheshwari Logo Image"
+          <img src="./assets/img/shipu.png" alt="Md Saymon Shahariya Logo Image"
             class="header__logo-img" />
         </div>
-        <span class="header__logo-sub">Ram Maheshwari</span>
+        <span class="header__logo-sub">Md Saymon Shahariya</span>
       </div>
       <div class="header__main">
         <ul class="header__links">
@@ -76,10 +76,10 @@
   </header>
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Boreal Coffee Clone</h1>
+      <h1 class="heading-primary">Heavy Metal T-Shirt</h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          This page contains the case study of Boreal Coffee Clone Website
+          This page contains the case study of Heavy Metal T-Shirt Website
           which includes the Project Overview, Tools Used and Live Links to
           the official product.
         </p>
@@ -98,19 +98,13 @@
         <div class="project-details__content-main">
           <div class="project-details__desc">
             <h2 class="project-details__content-title">
-              Boreal Coffee Clone
+                Project Overview
             </h2>
             <p class="project-details__desc-para">
-              I decided to recreate the Frontend of Boreal Coffee's official
-              Web App as I got attracted to their beautiful UI and it was a
-              great opportunity for me to showcase my frontend skills by
-              rebuilding the UI and it ended up being a great experience for
-              me.
+                Entranced by the allure of Heavy Metal T-Shirt's (HMT) unique concept, I undertook the challenge of reimagining its frontend interface. Drawn to its niche market and passionate fanbase, I saw an opportunity to showcase my frontend prowess by revamping the UI. 
             </p>
             <p class="project-details__desc-para">
-              I used my frontend tools to build the User Interface which works
-              on all types of devices along with the SPA library to make the
-              frontend perform faster.
+                Through meticulous attention to detail and the utilization of cutting-edge frontend tools, I meticulously crafted a user interface that not only captured the essence of HMT's brand but also optimized performance across all devices. By incorporating responsive design principles and leveraging the power of SPA libraries, I ensured a seamless browsing experience for users, further enhancing HMT's online presence and solidifying its position as a destination for music enthusiasts seeking high-quality band-themed apparel.
             </p>
             <p class="project-details__desc-para">
               Feel free to check out the Project by visiting the Live Link.
@@ -119,14 +113,15 @@
           <div class="project-details__tools-used">
             <h2 class="project-details__content-title">Tools Used</h2>
             <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Github</div>
-              <div class="skills__skill">Netlify</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Vuejs</div>
+                <div class="skills__skill">Nuxtjs</div>
+                <div class="skills__skill">Bootstrap</div>
+                <div class="skills__skill">SASS</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">GitLab</div>
             </div>
           </div>
           <div class="project-details__links">
@@ -147,11 +142,11 @@
             <span>Social</span>
           </h2>
           <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/rammcodes">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/md-saymon-shahariya-614aa9bb/">
               <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-                alt="Ram Maheshwari Linkedin Profile" />
+                alt="Md Saymon Shahariya Linkedin Profile" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/rammcodes">
+            <!-- <a target="_blank" rel="noreferrer" href="https://github.com/rammcodes">
               <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="RammCodes Github Profile" />
             </a>
             <a target="_blank" rel="noreferrer" href="https://twitter.com/rammcodes">
@@ -164,11 +159,11 @@
             <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg">
               <img class="main-footer__icon main-footer__icon--mr-none" src="https://d33wubrfki0l68.cloudfront.net/493f1aa6da674c05bc606ba5b9e8092b881e8626/67c76/assets/png/yt-ico.png"
                 alt="RammCodes Youtube Channel" />
-            </a>
+            </a> -->
           </div>
         </div>
         <div class="main-footer__row main-footer__row-2">
-          <h2 class="heading heading-sm text-lt">Ram Maheshwari</h2>
+          <h2 class="heading heading-sm text-lt">Md Saymon Shahariya</h2>
           <p class="main-footer__short-desc">
             A Frontend focused Web Developer building the Frontend of Websites
             and Web Applications that leads to the success of the overall
@@ -180,13 +175,14 @@
       <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
       <div class="main-footer__lower">
         &copy; Copyright
-        <script>document.write(new Date().getFullYear())</script>. Made by
-        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        <script>document.write(new Date().getFullYear())</script>
+        <!-- . Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Md Saymon Shahariya</a> -->
       </div>
     </div>
   </footer>
   <script src='https://d33wubrfki0l68.cloudfront.net/js/96f5c0d4b9bdbf07570efd8e94cb7db7a5191a01/index.js'></script>
-  <script src="https://code.tidio.co/hkirvl5pqs5cjjawh11xutnzjgtg9tfi.js" async></script>
+  <!-- <script src="https://code.tidio.co/hkirvl5pqs5cjjawh11xutnzjgtg9tfi.js" async></script> -->
 </body>
 
 </html>
