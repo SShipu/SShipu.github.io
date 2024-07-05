@@ -1,550 +1,1146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <title>Md Saymon Shahariya | Frontend Developer</title>
-  <meta name="description"
-    content="A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product" />
-  <meta name="author" content="Md Saymon Shahariya" />
-  <meta name="google-site-verification" content="wX2xdkxqjrC4rA2EM-9bbaVpiEEFG8ae5azgeZDd-oo" />
-
-  <meta property="og:title" content="Md Saymon Shahariya | RammCodes | Frontend Developer" />
-  <meta property="og:site_name" content="Md Saymon Shahariya Portfolio Website" />
-  <!-- <meta property="og:url" content="https://www.rammaheshwari.com/" /> -->
-  <meta property="og:description"
-    content="A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://i.ibb.co/C8Wnkrt/pretty-snap-2022-3-29-16-11.png" />
-
-  <link href='https://d33wubrfki0l68.cloudfront.net/css/b14c4959d2141192dcad9a56bef700e9b47ebb62/css/style.css' rel='stylesheet'/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9ESD1D9K"></script> -->
-  <!-- <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
-
-    gtag('config', 'G-QD9ESD1D9K')
-  </script> -->
-  <style>
-    .error-message {
-        color: #ff0000;
-    }
-  </style>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/img/shipu.png" alt="Md Saymon Shahariya Logo Image"
-            class="header__logo-img" />
-        </div>
-        <span class="header__logo-sub">Md Saymon Shahariya</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="index.html" class="header__link"> Home </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="index.html#about" class="header__link">About </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="index.html#projects" class="header__link"> Projects </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="index.html#contact" class="header__link"> Contact </a>
-          </li>
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="index.html"> Home </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="index.html#about"> About </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="index.html#projects"> Projects </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="index.html#contact"> Contact </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section class="home-hero">
-    <div class="home-hero__content">
-      <h1 class="heading-primary">Hey, I'm Md Saymon Shahariya</h1>
-      <div class="home-hero__info">
-        <p class="text-primary">
-          A Frontend focused Web Developer building the Frontend of Websites
-          and Web Applications that leads to the success of the overall
-          product
-        </p>
-      </div>
-      <div class="home-hero__cta">
-        <a href="index.html#projects" class="btn btn--bg">Projects</a>
-      </div>
-    </div>
-    <div class="home-hero__socials">
-      <div class="home-hero__social">
-        <a href="https://www.linkedin.com/in/md-saymon-shahariya-614aa9bb/" class="home-hero__social-icon-link" rel="noreferrer"
-          target="_blank">
-          <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="Md Saymon Shahariya Linkedin Profile"
-            class="home-hero__social-icon" />
-        </a>
-      </div>
-      <!-- <div class="home-hero__social">
-        <a href="https://twitter.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-          <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg" alt="RammCodes Twitter Profile" class="home-hero__social-icon" />
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
-          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none" rel="noreferrer" target="_blank">
-          <img src="https://d33wubrfki0l68.cloudfront.net/7c95be3350552a5e9f2fc47f1bdbac118ea4dcee/f7a5e/assets/svg/yt-dark.svg" alt="RammCodes Youtube Channel" class="home-hero__social-icon" />
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://github.com/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-          <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="RammCodes Github Profile" class="home-hero__social-icon" />
-        </a>
-      </div>
-
-      <div class="home-hero__social">
-        <a href="https://dev.to/rammcodes" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-          <img src="https://d33wubrfki0l68.cloudfront.net/e978c8491d93813aa00b3dc80b9abfb0d64a9086/3c187/assets/svg/book-dark.svg" alt="RammCodes DEV.to Blog Profile" class="home-hero__social-icon" />
-        </a>
-      </div> -->
-    </div>
-    <div class="home-hero__mouse-scroll-cont">
-      <div class="mouse"></div>
-    </div>
-  </section>
-  <section id="about" class="about sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main">About Me</span>
-        <span class="heading-sec__sub">
-          Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
-        </span>
-      </h2>
-      <div class="about__content">
-        <div class="about__content-main">
-          <h3 class="about__content-title">Get to know me!</h3>
-          <div class="about__content-details">
-            <p class="about__content-details-para">
-              I'm a <strong>Frontend Developer</strong> building the
-              Front-end of Websites and Web Applications that leads to the
-              success of the overall product. Check out some of my work in the
-              <strong>Projects</strong> section.
-            </p>
-            <!-- <p class="about__content-details-para">
-              I also like sharing content related to the stuff that I have
-              learned over the years in <strong>Web Development</strong> so it
-              can help other people of the Dev Community. Feel free to Connect
-              or Follow me on my
-              <a rel="noreferrer" href="https://www.linkedin.com/in/md-saymon-shahariya-614aa9bb/" target="_blank">Linkedin</a>.
-              where I post useful content related to Web Development and
-              Programming
-            </p> -->
-            <p class="about__content-details-para">
-              I'm open to <strong>Job</strong> opportunities where I can
-              contribute, learn and grow. If you have a good opportunity that
-              matches my skills and experience then don't hesitate to
-              <strong>contact</strong> me.
-            </p>
-          </div>
-          <a href="index.html#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
-        </div>
-        <div class="about__content-skills">
-          <h3 class="about__content-title">My Skills</h3>
-          <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">PHP</div>
-            <div class="skills__skill">VueJs</div>
-            <div class="skills__skill">NuxtJs</div>
-            <div class="skills__skill">SASS</div>
-            <div class="skills__skill">Bootstrap</div>
-            <div class="skills__skill">GIT</div>
-            <div class="skills__skill">jQuery</div>
-            <div class="skills__skill">GitLab</div>
-            <div class="skills__skill">Github</div>
-            <div class="skills__skill">SQL Basics</div>
-            <div class="skills__skill">Responsive Design</div>
-            <div class="skills__skill">Linux</div>
-            <!-- <div class="skills__skill">Terminal</div> -->
-            <!-- <div class="skills__skill">Express Basics</div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="projects sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projects</span>
-        <span class="heading-sec__sub">
-          Here you will find some of the personal and clients projects that I
-          created with each project containing its own case study
-        </span>
-      </h2>
-
-      <div class="projects__content">
-        <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img src="./assets/img/projects/biye.io.png" alt="Software Screenshot" class="projects__row-img"
-                loading="lazy" />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Biye.io</h3>
-              <p class="projects__row-content-desc">
-                  BIye.io offers a comprehensive event planning solution, consolidating all your needs in one convenient platform. From budget calculation to guest lists, vendors to custom websites, BIye.io provides a range of services and packages tailored to your event planning requirements.
-              </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='project-2.html' target='_blank'>Case Study</a>
-            </div>
-          </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/img/projects/akhtar.png" alt="Software Screenshot" class="projects__row-img" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-
-            <!-- <img src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" /> -->
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Akhtar Furnishers</h3>
-            <p class="projects__row-content-desc">
-                Akhtar Furnishers stands at the forefront of luxury furniture commerce, where opulence transcends mere concept to become a lifestyle. In this age of digital convenience, Akhtar embarked on a journey to redefine the luxury furniture sector through a premier e-commerce platform.
-            </p>
-            <a class='btn btn--med btn--theme dynamicBgClr' href='project-1.html' target='_blank'>Case Study</a>
-          </div>
-        </div>
-
-        <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img src="./assets/img/projects/delta.png" alt="Software Screenshot" class="projects__row-img" alt="Software Screenshot" class="projects__row-img"
-                loading="lazy" />
-  
-              <!-- <img src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg" alt="Software Screenshot" class="projects__row-img"
-                loading="lazy" /> -->
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Delta Furnishers</h3>
-              <p class="projects__row-content-desc">
-                Delta Furnishers stands out as a pioneer in the realm of minimalist yet elegant furniture commerce, where luxury becomes more than just an idea—it becomes a way of life. In today's digital age, Delta has set out on a journey to redefine the sector of simple yet stunning furniture through its cutting-edge e-commerce platform.
-              </p>
-              <a class='btn btn--med btn--theme dynamicBgClr' href='project-1.1.html' target='_blank'>Case Study</a>
-            </div>
-          </div>
+    <head>
+        <title> Md Saymon Shahariya - Personal CV/Resume Template </title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Md Saymon Shahariya Personal cv/resume template for professional and personal website." />
+        <meta name="keywords" content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard " />
+        <meta name="developer" content="Md Saymon Shahariya">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/img/projects/hmt.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Heavy Metal T-Shirt</h3>
-            <p class="projects__row-content-desc">
-                Heavy Metal T-Shirt stands as an innovative online eCommerce platform, exclusively curated for aficionados of band-themed apparel. Offering a diverse range of merchandise including t-shirts, hoodies, tank tops, and beyond, HMT ensures that music enthusiasts can flaunt their passion in style.
-            </p>
-            <a class='btn btn--med btn--theme dynamicBgClr' href='project-3.html' target='_blank'>Case Study</a>
-          </div>
+        <!-- FAV AND ICONS   -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/apple-icon.png">
+        <link rel="shortcut icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="shortcut icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+        
+        <!-- Google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+        <!-- Animate CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/animate.css">
+        <!-- Owl Carousel CSS-->
+        <link rel="stylesheet" href="assets/plugins/css/owl.css">
+        <!-- Fancybox-->
+        <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- Colors -->
+        <link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue">
+        <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld">
+        <link rel="alternate stylesheet" href="assets/css/colors/green.css" title="green">
+        <link rel="alternate stylesheet" href="assets/css/colors/blue-munsell.css" title="blue-munsell">
+        <link rel="alternate stylesheet" href="assets/css/colors/orange.css" title="orange">
+        <link rel="alternate stylesheet" href="assets/css/colors/purple.css" title="purple">
+        <link rel="alternate stylesheet" href="assets/css/colors/slate.css" title="slate">
+        <link rel="alternate stylesheet" href="assets/css/colors/yellow.css" title="yellow">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .error-message {
+                color: #ff0000 !important;
+            }
+            .single-form input, .single-form textarea  {
+                margin: 0 !important;
+            }
+            .btn-block {
+                cursor: pointer;
+            }
+            .btn-block:hover {
+                opacity: 1 !important;
+            }
+        </style>
+    </head>
+    <body class="dark-vertion black-bg">
+        <!-- Start Loader -->
+        <div class="section-loader">
+            <div class="loader">
+                <div></div>
+                <div></div> 
+            </div>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/img/projects/tnr.png" alt="Software Screenshot" class="projects__row-img"
-              loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">TNR</h3>
-            <p class="projects__row-content-desc">
-                TNR, established in 2021 by Trina Falgune and Sheikh Naeem in Bangladesh, fills a niche in the local leisure and recreation scene. In a country where leisure often means movies or dining out, and international travel is limited to a select few, TNR offers unique experiences within Bangladesh itself. Recognizing the country's untapped potential in unexplored venues, natural habitats, and wildlife, TNR provides affordable and thrilling domestic adventures. Through this, TNR aims to elevate the lifestyle of locals, offering them frequent opportunities for excitement and discovery.
-            </p>
-            <a class='btn btn--med btn--theme dynamicBgClr' href='project-4.html' target='_blank'>Case Study</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact sec-pad dynamicBg">
-    <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-            <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-            <span class="heading-sec__sub heading-sec__sub--lt">
-                Feel free to Contact me by submitting the form below and I will get
-                back to you as soon as possible
-            </span>
-        </h2>
-        <div class="contact__form-container">
-            <form class='contact__form' id="contactForm">
-                <input type='hidden' name='form-name' value='form 1' />
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="name">Name</label>
-                    <input required placeholder="Enter Your Name" id="infoName" type="text" class="contact__form-input" name="name" />
-                    <span class="error-message" id="nameError"></span>
+        <!-- End Loader -->
+        
+        <!--
+        ===================
+           NAVIGATION
+        ===================
+        -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <a class="navbar-brand" href="index.html#" style="display: flex; width: 50px; align-items: center;">
+                            <img src="assets/images/shipu.png" alt="" class="img-fluid mx-3 my-1">
+                            <h4 class="m-0 d-none d-md-flex">Md Saymon Shahariya</h4>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-0 ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="index.html#mh-skills">Skills</a>
+                                </li>                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="index.html#mh-experience">Experiences</a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#mh-portfolio">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="index.html#mh-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="email">Email</label>
-                    <input required placeholder="Enter Your Email" id="infoEmail" type="email" class="contact__form-input" name="email" />
-                    <span class="error-message" id="emailError"></span>
+            </div>
+        </header>
+        
+        <!--
+        ===================
+            HOME 
+        ===================
+        -->
+        <section class="mh-home" id="mh-home">
+            <div class="home-ovimg">
+                <div class="container">
+                    <div class="row xs-column-reverse section-separator vertical-middle-content home-padding">
+                        <div class="col-sm-6">
+                            <div class="mh-header-info">
+                                <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                                    <span>Hello I'm</span>
+                                </div>
+                                
+                                <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Md Saymon Shahariya</h2>
+                                <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Software Engineer</h4>
+                                
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:">sshahariyal@gmail.com</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">+8801744612299</a></li>
+                                    <!-- <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i class="fa fa-map-marker"></i><address>37, Pollsatnd, New York, United State</address></li> -->
+                                </ul>
+                                
+                                <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <!-- <li><a href="index.html"><i class="fa fa-facebook"></i></a></li> -->
+                                    <li><a href="https://wwww.linkedin.com/in/md-saymon-shahariya-614aa9bb" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://github.com/sshipu" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <!-- <li><a href="index.html"><i class="fa fa-dribbble"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                <div class="img-border">
+                                    <img src="assets/images/shipu.png" alt=""  class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact__form-field">
-                    <label class="contact__form-label" for="message">Message</label>
-                    <textarea required cols="30" rows="10" id="infoMessage" class="contact__form-input" placeholder="Enter Your Message" name="message"></textarea>
-                    <span class="error-message" id="messageError"></span>
+            </div>
+        </section>   
+        
+        <!--
+        ==================
+            ABOUT
+        =================
+        -->
+        <section class="mh-about" id="mh-about">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                            <img src="assets/images/ab-img.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-about-inner">
+                            <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
+                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Hello, I’m a Md Saymon Shahariya, a Software Engineer specializing in Web Development based on Dhaka, Bangladesh. 
+                                With 5 years of experience, strong focus on Front End Development. 
+                                Additionally, I am proficient in Backend Technologies including PHP and MySQL.
+                                I have rich experience in web site design & building 
+                            and customization. Also I am good at</p>
+                            <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <ul>
+                                    <li><span>Javascript</span></li>
+                                    <li><span>HTML</span></li>
+                                    <li><span>CSS, SCSS</span></li>
+                                    <li><span>Bootstrap</span></li>
+                                    <li><span>jQuery</span></li>
+                                    <li><span>Vue.js</span></li>
+                                    <li><span>Nuxt.js</span></li>
+                                    <li><span>PHP</span></li>
+                                    <li><span>MySQL</span></li>
+                                    <li><span>React.js</span></li>
+                                    <li><span>Git</span></li>
+                                    <li><span>Linux</span></li>
+                                </ul>
+                            </div>
+                            <a href="./assets/cv/CV-Md Saymon Shahariya.pdf" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" download target="_blank">
+                                Download CV <i class="fa fa-download"></i>
+                            </a>                            
+                            <!-- <a href="index.html" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" download>Downlaod CV <i class="fa fa-download"></i></a> -->
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <button type="submit" onclick="sendEmail()" id="myAnchor" class="btn btn--theme contact__btn">Submit</button>
-        </div>
-    </div>
-    <!-- <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-        <span class="heading-sec__sub heading-sec__sub--lt">
-          Feel free to Contact me by submitting the form below and I will get
-          back to you as soon as possible
-        </span>
-      </h2>
-      <div class="contact__form-container">
-        <form class='contact__form'><input type='hidden' name='form-name' value='form 1' />
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="name">Name</label>
-            <input required placeholder="Enter Your Name" id="infoName" type="text" class="contact__form-input" name="name"
-              id="name" />
-          </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="email">Email</label>
-            <input required placeholder="Enter Your Email" id="infoEmail" type="email" class="contact__form-input" name="email"
-              id="email" />
-          </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="message">Message</label>
-            <textarea required cols="30" rows="10" id="infoMessage" class="contact__form-input" placeholder="Enter Your Message"
-              name="message" id="message"></textarea>
-          </div>
-        </form>
-        <button type="submit" onclick="sendEmail()" id="myAnchor" class="btn btn--theme contact__btn">Submit</button>
-      </div>
-    </div> -->
-  </section>
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Social</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/md-saymon-shahariya-614aa9bb/">
-              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-                alt="Md Saymon Shahariya Linkedin Profile" />
-            </a>
-            <!-- <a target="_blank" rel="noreferrer" href="https://github.com/rammcodes">
-              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="RammCodes Github Profile" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/rammcodes">
-              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png" alt="RammCodes Twitter Profile" />
-            </a>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           SERVICE
+        ===================
+        -->
+        <!-- <section class="mh-service">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 text-center section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h3>What I do</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <i class="fa fa-bullseye purple-color"></i>
+                            <h3>UI Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <i class="fa fa-code iron-color"></i>
+                            <h3>Web Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                            <i class="fa fa-object-ungroup sky-color"></i>
+                            <h3>App Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        -->
+        
+        <!--
+        ===================
+           SKILLS
+        ===================
+        -->
+        <section class="mh-skills" id="mh-skills">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title text-center col-sm-12">
+                        <!--<h2>Skills</h2>-->
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                <h3>Technical Skills</h3>
+                                <div class="each-skills">
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Javascript</div>
+                                                <div class="percentagem-num">75%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 75%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">HTML</div>
+                                                <div class="percentagem-num">77%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 77%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">CSS</div>
+                                                <div class="percentagem-num">76%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 76%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Vue.js</div>
+                                                <div class="percentagem-num">70%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">React.js</div>
+                                                <div class="percentagem-num">30%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 30%;"></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">PHP</div>
+                                                <div class="percentagem-num">50%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 50%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">MySQL</div>
+                                                <div class="percentagem-num">50%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 50%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">Git</div>
+                                                <div class="percentagem-num">60%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width: 60%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-professional-skills wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <h3>Professional Skills</h3>
+                            <ul class="mh-professional-progress" >
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skill-name">Communication</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="85"></div> 
+                                    <div class="pr-skill-name">Team Work</div>
+                                </li>
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="75"></div>
+                                    <div class="pr-skill-name">Project Management</div>
+                                </li> 
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="60"></div>
+                                    <div class="pr-skill-name">Creativity</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           EXPERIENCES
+        ===================
+        -->
+        <section class="mh-experince" id="mh-experience">
+            <div class="bolor-overlay">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-education">
+                                 <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Education</h3>
+                                <div class="mh-education-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-education-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <h4>BSc in &#x201C;Computer Science & Engineering&#x201D; From <a href="index.html">Institute of Science & Technology(IST)</a></h4>
+                                        <div class="mh-eduyear">2015-2019</div>
+                                        <!-- <p>It is a long established fact that a reader will be distracted by the readable content of a 
+                                        page when looking at its layout. The point of using  Lorem Ipsum </p> -->
+                                    </div>                                
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="mh-work">
+                                 <h3>Work Experience</h3>
+                                <div class="mh-experience-deatils">
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                                        <h4><a href="index.html">Rigg Technologies</a></h4>
+                                        <h6>Software Engineer</h6>
+                                        <div class="mh-eduyear">08.2020 - present</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Worked on The Front-end and Back-end development using Vue.js and php.</li>
+                                            <li><i class="fa fa-circle"></i>Worked on e-commerce single page application using vue.js, php Doctrine.</li>
+                                            <li><i class="fa fa-circle"></i>Engineered modern Websites according to clients’ instructions.</li>
+                                        </ul>
+                                    </div>                                
+                                    <!-- Education Institutes-->
+                                    <div class="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                                        <h4><a href="index.html">Full Stack Devs</a></h4>
+                                        <h6>Junior Software Engineer(Front-end)</h6>
+                                        <div class="mh-eduyear">07.2019 - 08.2020</div>
+                                        <span>Responsibility :</span>
+                                        <ul class="work-responsibility">
+                                            <li><i class="fa fa-circle"></i>Worked closely with the Senior Developers and leveraged knowledge about Front-end Development.</li>
+                                            <li><i class="fa fa-circle"></i>Revamped existing jquery applications into Vue.js applications.</li>
+                                            <li><i class="fa fa-circle"></i>Resolved design issues and wrote libraries for organizational applications.</li>
+                                            <li><i class="fa fa-circle"></i>Worked on multiple front-end projects.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--
+        ===================
+           PORTFOLIO
+        ===================
+        -->
+        <!-- <section class="mh-portfolio" id="mh-portfolio">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3>Recent Portfolio</h3>
+                    </div>
+                    <div class="part col-sm-12">
+                        <div class="portfolio-nav col-sm-12" id="filter-button">
+                            <ul>
+                                <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
+                                <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Design</span></li>
+                                <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Branding</span></li>
+                                <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>
+                                <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li>
+                            </ul>
+                        </div>
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="portfolioContainer row">
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="assets/images/portfolio/akhtar-1.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Akhtar Furnishers</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g2.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Delta Furnishers</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g2.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g3.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g3.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g5.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g5.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g4.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g4.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g6.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g6.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g8.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g8.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g9.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g9.png" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g7.jpg" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Creative Design</h5>
+                                            <span class="sub-title">Photograpy</span>
+                                            <a href="assets/images/portfolio/g7.jpg" data-fancybox="gallery"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="mh-portfolio-modal" id="mh">
+                <div class="container">
+                    <div class="row mh-portfolio-modal-inner">
+                        <div class="col-sm-5">
+                            <h2>Akhtar Furnishers</h2>
+                            <p>Akhtar Furnishers stands as a pioneering force in the luxury furniture industry, redefining opulence as a lifestyle rather than a mere concept. In today's digital age, marked by convenience and innovation, Akhtar embarked on a transformative journey to revolutionize the luxury furniture sector through its cutting-edge e-commerce platform. This endeavor transcended traditional boundaries, aiming to reshape how people perceive and engage with luxury furniture by offering a curated collection of exquisite pieces that epitomize sophistication, elegance, and timeless design. </p>       
+                            
+                            <p>Through meticulous curation and a steadfast commitment to excellence, Akhtar Furnishers curated a collection of furniture pieces that tell a story of impeccable craftsmanship, refined aesthetics, and uncompromising luxury. Leveraging technology and embracing digital transformation, Akhtar Furnishers aimed to provide customers with unparalleled access to exquisite furniture pieces, right from the comfort of their homes. In essence, Akhtar Furnishers' journey represents a fusion of tradition and innovation, empowering customers to elevate their living spaces with furniture that exudes both beauty and functionality.</p>      
+                            <div class="mh-about-tag">
+                                <ul>
+                                    <li><span>Javascript</span></li>
+                                    <li><span>HTML</span></li>
+                                    <li><span>SCSS</span></li>
+                                    <li><span>Nuxt.js</span></li>
+                                    <li><span>Bootstrap</span></li>
+                                    <li><span>Git</span></li>
+                                </ul>
+                            </div>
+                            <a href="https://akhtar.com.bd/" class="btn btn-fill" target="_blank">Live Demo</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="mh-portfolio-modal-img">
+                                <img src="assets/images/portfolio/akhtar-1.png" alt="" class="img-fluid">
+                                <p>All variations are organized separately so you can use / customize the template very easily.</p>    
+                                <img src="assets/images/pr-1.jif" alt="" class="img-fluid">
+                                <p>All variations are organized separately so you can use / customize the template very easily.</p>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="mh-portfolio" id="mh-portfolio">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="section-title col-sm-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                        <h3>Recent Portfolio</h3>
+                    </div>
+                    <div class="part col-sm-12">
+                        <!-- <div class="portfolio-nav col-sm-12" id="filter-button">
+                            <ul>
+                                <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
+                                <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Design</span></li>
+                                <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Branding</span></li>
+                                <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>
+                                <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li>
+                            </ul>
+                        </div> -->
+                        <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="portfolioContainer row">
+                                <!-- <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface" data-title="Akhtar Furnishers" data-description="Akhtar Furnishers stands as a pioneering force..." data-tags="Javascript, HTML, SCSS, Nuxt.js, Bootstrap, Git" data-image="assets/images/portfolio/akhtar-1.png" data-live-url="https://akhtar.com.bd/">
+                                    <figure>
+                                        <img src="assets/images/portfolio/akhtar-1.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Akhtar Furnishers</h5>
+                                            <span class="sub-title">Photography</span>
+                                            <a href="#" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup" data-title="Delta Furnishers" data-description="Delta Furnishers description goes here..." data-tags="Javascript, HTML, CSS" data-image="assets/images/portfolio/g2.png" data-live-url="https://delta.com/">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g2.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Delta Furnishers</h5>
+                                            <span class="sub-title">Photography</span>
+                                            <a href="#" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div> -->
+                                <!-- <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface" data-id="1">
+                                    <figure>
+                                        <img src="assets/images/portfolio/akhtar-1.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Akhtar Furnishers</h5>
+                                            <span class="sub-title">Photography</span>
+                                            <a href="#" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup" data-id="2">
+                                    <figure>
+                                        <img src="assets/images/portfolio/g2.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Delta Furnishers</h5>
+                                            <span class="sub-title">Photography</span>
+                                            <a href="#" data-fancybox data-src="#mh"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div> -->
+                                <!-- Add more grid items similarly -->
+                                
+                                <!-- Add more grid items similarly -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mh-portfolio-modal" id="mh">
+                <div class="container">
+                    <div class="row mh-portfolio-modal-inner">
+                        <div class="col-sm-5">
+                            <h2 id="modal-title"></h2>
+                            <div id="modal-description"></div>
+                            <div class="mh-about-tag">
+                                <ul id="modal-tags">
+                                    <li><span></span></li>
+                                    <li><span></span></li>
+                                    <li><span></span></li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn btn-fill" target="_blank" id="modal-live-url">Live Demo</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="mh-portfolio-modal-img">
+                                <img src="" alt="" class="img-fluid" id="modal-image">
+                                <img src="" alt="" class="img-fluid" id="modal-image-v2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
 
-            <a target="_blank" rel="noreferrer" href="https://dev.to/rammcodes">
-              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/c7b1e51b8c75a239d68af3d42866666580f390ec/dcc7c/assets/png/blog-ico.png" alt="RammCodes DEV.to Blog Profile" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg">
-              <img class="main-footer__icon main-footer__icon--mr-none" src="https://d33wubrfki0l68.cloudfront.net/493f1aa6da674c05bc606ba5b9e8092b881e8626/67c76/assets/png/yt-ico.png"
-                alt="RammCodes Youtube Channel" />
-            </a> -->
-          </div>
-        </div>
-        <div class="main-footer__row main-footer__row-2">
-          <h2 class="heading heading-sm text-lt">Md Saymon Shahariya</h2>
-          <p class="main-footer__short-desc">
-            A Frontend focused Web Developer building the Frontend of Websites
-            and Web Applications that leads to the success of the overall
-            product
-          </p>
-        </div>
-      </div>
+            const portfolioData = [
+                {
+                    id: 1,
+                    title: "Biye.io",
+                    description: `
+                        <p>BIye.io redefines event planning by providing a comprehensive platform that caters to every aspect of your special occasion. Founded on the principles of efficiency and convenience, BIye.io offers a range of indispensable services tailored to meet your event planning needs. From meticulously crafted budget calculators and customizable checklists to seamless guest list management and innovative e-invite RSVP solutions, BIye.io ensures that no detail is overlooked. Moreover, our platform goes beyond the basics, offering features like gift registries and custom websites, allowing you to curate a truly unforgettable event experience.</p>
+                        <p>At BIye.io, we understand that every event is unique, and that's why we're committed to offering flexible packages and personalized services that align with your vision. With our user-friendly interface and intuitive tools, you'll have everything you need to plan and execute your event seamlessly. Whether you're a seasoned event planner or organizing your first gathering, BIye.io empowers you to create memorable moments with ease. Let us be your partner in turning your event dreams into reality.</p>
+                        `
+                    ,
+                    type: 'eventManagement',
+                    tags: ["Javascript", "HTML", "SCSS", "Vue.js", "Bootstrap", "Git"],
+                    image: "assets/images/portfolio/biye.io.png",
+                    imageV2: "",
+                    liveUrl: "https://www.biye.io/"
+                },
+                {
+                    id: 2,
+                    title: "Akhtar Furnishers",
+                    description: `
+                        <p>Akhtar Furnishers stands as a pioneering force in the luxury furniture industry, redefining opulence as a lifestyle rather than a mere concept. In today's digital age, marked by convenience and innovation, Akhtar embarked on a transformative journey to revolutionize the luxury furniture sector through its cutting-edge e-commerce platform. This endeavor transcended traditional boundaries, aiming to reshape how people perceive and engage with luxury furniture by offering a curated collection of exquisite pieces that epitomize sophistication, elegance, and timeless design.</p>
+                        <p>Through meticulous curation and a steadfast commitment to excellence, Akhtar Furnishers curated a collection of furniture pieces that tell a story of impeccable craftsmanship, refined aesthetics, and uncompromising luxury. Leveraging technology and embracing digital transformation, Akhtar Furnishers aimed to provide customers with unparalleled access to exquisite furniture pieces, right from the comfort of their homes. In essence, Akhtar Furnishers' journey represents a fusion of tradition and innovation, empowering customers to elevate their living spaces with furniture that exudes both beauty and functionality.</p>`
+                    ,
+                    type: 'eCommerce',
+                    tags: ["Javascript", "HTML", "SCSS", "Nuxt.js", "Bootstrap", "Git"],
+                    image: "assets/images/portfolio/akhtar-1.png",
+                    imageV2: "",
+                    liveUrl: "https://akhtar.com.bd/"
+                },
+                {
+                    id: 3,
+                    title: "Delta Furnishers",
+                    description: `
+                            <p>Delta Furnishers stands out as a pioneer in the realm of minimalist yet elegant furniture commerce, where luxury becomes more than just an idea—it becomes a way of life. In today's digital age, Delta has set out on a journey to redefine the sector of simple yet stunning furniture through its cutting-edge e-commerce platform.</p>
+                            `,
+                    type: 'eCommerce',
+                    tags: ["Javascript", "HTML", "SCSS", "Nuxt.js", "Bootstrap", "Git"],
+                    image: "assets/images/portfolio/delta.png",
+                    imageV2: "",
+                    liveUrl: "https://deltafurnishers.com/"
+                },
+                {
+                    id: 4,
+                    title: "Heavy Metal T-Shirt",
+                    description: `
+                            <p>Entranced by the allure of Heavy Metal T-Shirt's (HMT) unique concept, I undertook the challenge of reimagining its frontend interface. Drawn to its niche market and passionate fanbase, I saw an opportunity to showcase my frontend prowess by revamping the UI. </p>
+                            <p>Through meticulous attention to detail and the utilization of cutting-edge frontend tools, I meticulously crafted a user interface that not only captured the essence of HMT's brand but also optimized performance across all devices. By incorporating responsive design principles and leveraging the power of SPA libraries, I ensured a seamless browsing experience for users, further enhancing HMT's online presence and solidifying its position as a destination for music enthusiasts seeking high-quality band-themed apparel.</p>
+                            `,
+                    type: 'eCommerce',
+                    tags: ["Javascript", "HTML", "SCSS", "Vue.js", "Bootstrap", "PHP", "MySQL", "Git"],
+                    image: "assets/images/portfolio/hmt.png",
+                    imageV2: "",
+                    liveUrl: "https://heavymetaltshirtbd.com/"
+                },
+                {
+                    id: 5,
+                    title: "Admin Panel",
+                    description: `
+                            <p>Admin panels are essential for managing dynamic website content such as shop product images, information, category details, about us sections, terms & conditions, and banner images. They provide robust tools for maintaining and updating crucial site data, ensuring relevance and engagement.</p>
+                        `,
+                    type: 'app',
+                    tags: ["Javascript", "jQuery", "HTML", "SCSS", "Bulma", "Git"],
+                    image: "assets/images/portfolio/admin.png",
+                    imageV2: "",
+                    liveUrl: "javascript:void(0)"
+                },
+                {
+                    id: 6,
+                    title: "TNR",
+                    description: `
+                            <p>TNR, founded in 2021 by Trina Falgune and Sheikh Naeem in Bangladesh, addresses a gap in the local leisure and recreation landscape. Amidst a culture where leisure typically entails movies or dining out, and overseas travel remains a luxury, TNR stands out by offering distinctive experiences within Bangladesh itself. Leveraging the country's untapped potential in unexplored venues, natural habitats, and wildlife, TNR provides accessible and exhilarating domestic adventures. Through these offerings, TNR aims to enrich the lifestyle of locals, granting them frequent opportunities for excitement and exploration.</p>
+                            `,
+                    type: 'tour&travels',
+                    tags: ["Javascript", "HTML", "SCSS", "Nuxt.js", "Bootstrap", "Git"],
+                    image: "assets/images/portfolio/tnr.png",
+                    imageV2: "",
+                    liveUrl: "https://heavymetaltshirtbd.com/"
+                },
+                {
+                    id: 7,
+                    title: "Khamarguru",
+                    description: `
+                            <p>Khamarguru is both a mobile app and web app designed for livestock farm management at the Bangladesh Livestock Research Institute (BLRI), optimizing feed calculation, resource usage, live animal care, and overall productivity. It simplifies complex farming tasks, making operations more efficient and profitable.</p>
+                        `,
+                    type: 'app',
+                    tags: ["Javascript", "jQuery", "HTML", "CSS", "Bootstrap", "Git"],
+                    image: "assets/images/portfolio/khamarguru1.png",
+                    imageV2: "assets/images/portfolio/khamarguru2.png",
+                    liveUrl: "http://www.khamarguru.com/"
+                },
+                {
+                    id: 8,
+                    title: "ERP Solution",
+                    description: `
+                            <p>Mini ERP solution is designed to efficiently manage PSO (Purchase, Sales, and Supply) operations, streamline purchase management, track cash and bank account information, and visualize data through intuitive charts. It offers comprehensive tools for integrated business management, enhancing operational efficiency and decision-making.</p>
+                        `,
+                    type: 'app',
+                    tags: ["Javascript", "Vue.js", "HTML", "SCSS", "Bulma", "Git"],
+                    image: "assets/images/portfolio/erp.png",
+                    imageV2: "",
+                    liveUrl: "javascript:void(0)"
+                },
+                {
+                    id: 9,
+                    title: "Baksho",
+                    description: `
+                            <p>Baksho was founded as one place to find lifestyle and technology-related stories for your day, bringing together your favorite news sources with social content to give a deep view into everything from lifestyle to technology trends to travel inspiration. </p>
+                            `,
+                    type: 'newsPortal',
+                    tags: ["Javascript", "HTML", "SCSS", "Vue.js", "Bootstrap", "Git"],
+                    image: "assets/images/portfolio/baksho.png",
+                    imageV2: "",
+                    liveUrl: "http://baksho.xyz/"
+                },
+                
+                {
+                    id: 10,
+                    title: "POS Solution",
+                    description: `
+                            <p>A POS solution streamlines retail operations by automating sales transactions, inventory management, and customer interactions in real-time. It enhances efficiency, accuracy, and customer service, making it essential for modern retail environments.</p>
+                        `,
+                    type: 'app',
+                    tags: ["Javascript", "Vue.js", "HTML", "SCSS", "Bulma", "Git"],
+                    image: "assets/images/portfolio/pos.png",
+                    imageV2: "",
+                    liveUrl: "javascript:void(0)"
+                },
+                
+                // Add more items similarly
+            ];
+            function generateGridItem(data) {
+                return `
+                    <div class="grid-item col-md-4 col-sm-6 col-xs-12 ${data.type.toLowerCase()}" data-id="${data.id}">
+                        <figure>
+                            <img src="${data.image}" alt="${data.title}">
+                            <figcaption class="fig-caption">
+                                <i class="fa fa-search"></i>
+                                <h5 class="title">${data.title}</h5>
+                                <span class="sub-title">${data.type}</span>
+                                <a href="#" data-fancybox data-src="#mh"></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                `;
+            }
 
-      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-      <div class="main-footer__lower">
-        &copy; Copyright
-        <script>document.write(new Date().getFullYear())</script>
-        <!-- . Made by
-        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Md Saymon Shahariya</a> -->
-      </div>
-    </div>
-  </footer>
+            document.addEventListener("DOMContentLoaded", function() {
+                const container = document.querySelector('.portfolioContainer');
+                portfolioData.forEach(item => {
+                    container.innerHTML += generateGridItem(item);
+                });
 
-    <script src='https://d33wubrfki0l68.cloudfront.net/js/96f5c0d4b9bdbf07570efd8e94cb7db7a5191a01/index.js'></script>
-    <!-- <script src="https://code.tidio.co/hkirvl5pqs5cjjawh11xutnzjgtg9tfi.js" async></script> -->
+                const gridItems = document.querySelectorAll(".grid-item");
+                gridItems.forEach(item => {
+                    item.addEventListener("click", function() {
+                        const id = parseInt(item.getAttribute("data-id"));
+                        const data = portfolioData.find(d => d.id === id);
+
+                        if (data) {
+                            document.getElementById("modal-title").textContent = data.title;
+                            document.getElementById("modal-description").innerHTML = data.description;
+                            if (!data.liveUrl.length) {
+                                document.getElementById("modal-live-url").style.display = "none !important";
+                            }
+
+                            const tagsContainer = document.getElementById("modal-tags");
+                            tagsContainer.innerHTML = '';
+                            data.tags.forEach(tag => {
+                                const li = document.createElement("li");
+                                li.innerHTML = `<span>${tag}</span>`;
+                                tagsContainer.appendChild(li);
+                            });
+
+                            document.getElementById("modal-image").src = data.image;
+                            document.getElementById("modal-image-v2").src = data.imageV2;
+                            document.getElementById("modal-live-url").href = data.liveUrl;
+                        }
+                    });
+                });
+            });
+
+        </script>
+        
+        <!--
+        ===================
+           FOOTER 1
+        ===================
+        -->
+        <footer class="mh-footer" id="mh-contact">
+            <div class="map-image image-bg">
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h3>Contact Me</h3>
+                        </div>
+                        <div class="col-sm-12 mh-footer-address">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-location-arrow"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Address</h4>
+                                            <address>
+                                                Mohammadpur, Dhaka - 1207, Bangladesh <br> 
+                                                 <!-- Bangladesh -->
+                                            </address>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Email</h4>
+                                            <a href="mailto:yourmail@email.com">sshahariya@gmail.com</a><br>
+                                            <!-- <a href="mailto:yourmail@email.com">yourmail@email.com</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                        <div class="each-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="each-info">
+                                            <h4>Phone</h4>
+                                            <a href="callto:(880)-8976-987">(+880)-1744612299</a><br>
+                                            <!-- <a href="callto:(880)-8976-987">(880)-8976-987</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input name="name" class="contact-email form-control" id="L_name" type="text" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    Subject Button
+                                    <div class="btn-form col-sm-12 col-md-6">
+                                        <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> -->
+                        <div class="col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" onsubmit="sendEmail(event)">
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 mb-3">
+                                        <input name="first_name" class="contact-name form-control" id="infoFirstName" type="text" placeholder="First Name" required>
+                                        <span id="nameError" class="error-message"></span>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 mb-3">
+                                        <input name="last_name" class="contact-email form-control" id="infoLastName" type="text" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-sm-12 mb-3">
+                                        <input name="email" class="contact-subject form-control" id="infoEmail" type="email" placeholder="Your Email" required>
+                                        <span id="emailError" class="error-message"></span>
+                                    </div>
+                                    <div class="col-sm-12 mb-3">
+                                        <textarea class="contact-message" id="infoMessage" rows="6" placeholder="Your Message" required></textarea>
+                                        <span id="messageError" class="error-message"></span>
+                                    </div>
+                                    <div class="btn-form col-sm-12 col-md-6">
+                                        <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="text-left text-xs-center">
+                                        <!-- <p>All right reserved Siful Islam @ 2018</p> -->
+                                         <p>
+                                            &copy; Copyright
+                                            <script>document.write(new Date().getFullYear())</script>
+                                         </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="social-icon">
+                                        <li><a href="https://wwww.linkedin.com/in/md-saymon-shahariya-614aa9bb" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/sshipu" target="_blank"><i class="fa fa-github"></i></a></li>
+                                            
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>     
+    
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- jQuery -->
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="assets/plugins/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/js/owl.carousel.js"></script>
+    <!-- validator -->
+    <script src="assets/plugins/js/validator.min.js"></script>
+    <!-- wow -->
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <!-- mixin js-->
+    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
+    <!-- circle progress-->
+    <script src="assets/plugins/js/circle-progress.js"></script>
+    <!-- jquery nav -->
+    <script src="assets/plugins/js/jquery.nav.js"></script>
+    <!-- Fancybox js-->
+    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+    <!-- isotope js-->
+    <script src="assets/plugins/js/isotope.pkgd.js"></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
+    <!-- Map api -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script> -->
+    <!-- Custom Scripts-->
+    <!-- <script src="assets/js/map-init.js"></script> -->
+    <script src="assets/js/custom-scripts.js"></script>
     <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
         function validateForm() {
-        let isValid = true;
+    let isValid = true;
 
-        let infoName = document.getElementById('infoName').value.trim();
-        let infoEmail = document.getElementById('infoEmail').value.trim();
-        let infoMessage = document.getElementById('infoMessage').value.trim();
+    let infoFirstName = document.getElementById('infoFirstName').value.trim();
+    let infoLastName = document.getElementById('infoLastName').value.trim();
+    let infoEmail = document.getElementById('infoEmail').value.trim();
+    let infoMessage = document.getElementById('infoMessage').value.trim();
 
-        let nameError = document.getElementById('nameError');
-        let emailError = document.getElementById('emailError');
-        let messageError = document.getElementById('messageError');
+    let nameError = document.getElementById('nameError');
+    let emailError = document.getElementById('emailError');
+    let messageError = document.getElementById('messageError');
 
-        nameError.textContent = "";
-        emailError.textContent = "";
-        messageError.textContent = "";
+    nameError.textContent = "";
+    emailError.textContent = "";
+    messageError.textContent = "";
 
-        if (!infoName) {
-            nameError.textContent = "Name is required.";
-            isValid = false;
-        }
-
-        if (!infoEmail) {
-            emailError.textContent = "Email is required.";
-            isValid = false;
-        } else if (!validateEmail(infoEmail)) {
-            emailError.textContent = "Invalid email format.";
-            isValid = false;
-        }
-
-        if (!infoMessage) {
-            messageError.textContent = "Message is required.";
-            isValid = false;
-        }
-
-        return isValid;
+    if (!infoFirstName || !infoLastName) {
+        nameError.textContent = "Both First and Last Names are required.";
+        isValid = false;
     }
 
-    function validateEmail(email) {
-        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return re.test(String(email).toLowerCase());
+    if (!infoEmail) {
+        emailError.textContent = "Email is required.";
+        isValid = false;
+    } else if (!validateEmail(infoEmail)) {
+        emailError.textContent = "Invalid email format.";
+        isValid = false;
     }
 
-    function sendEmail() {
-        emailjs.init({
-            publicKey: "6UjvitrsTssNlFnSa",
-        });
-
-        document.getElementById("myAnchor").addEventListener("click", function(event) {
-            event.preventDefault();
-        });
-
-        setTimeout(() => {
-            if (validateForm()) {
-                let infoName = document.getElementById('infoName').value.trim();
-                let infoEmail = document.getElementById('infoEmail').value.trim();
-                let infoMessage = document.getElementById('infoMessage').value.trim();
-
-                let templateParams = {
-                    from_name: infoName,
-                    from_email: infoEmail,
-                    message: infoMessage,
-                };
-
-                emailjs.send('service_5n4ql5z', 'template_j2cmidj', templateParams, "6UjvitrsTssNlFnSa").then(
-                    (response) => {
-                        console.log('SUCCESS!', response.status, response.text);
-                        document.getElementById('infoName').value = "";
-                        document.getElementById('infoEmail').value = "";
-                        document.getElementById('infoMessage').value = "";
-                    },
-                    (error) => {
-                        console.log('FAILED...', error);
-                    },
-                );
-            }
-        }, 1000);
+    if (!infoMessage) {
+        messageError.textContent = "Message is required.";
+        isValid = false;
     }
-    // (function(){
-    //     emailjs.init({
-    //         publicKey: "6UjvitrsTssNlFnSa",
-    //     });
-        
-    // })();
-    // function sendEmail() {
-    //     emailjs.init({
-    //         publicKey: "6UjvitrsTssNlFnSa",
-    //     });
-    //     document.getElementById("myAnchor").addEventListener("click", function(event){
-    //         event.preventDefault()
-    //     });
-    //     setTimeout(() => {
-    //         let infoName = document.getElementById('infoName').value;
-    //         let infoEmail = document.getElementById('infoEmail').value;
-    //         let infoMessage = document.getElementById('infoMessage').value;
-    //         let templateParams = {
-    //             from_name: infoName,
-    //             from_email: infoEmail,
-    //             message: infoMessage,
-    //         };
-    //         if (infoName.trim().length && infoEmail.trim().length && infoMessage.trim().length) {
-    //             emailjs.send('service_5n4ql5z', 'template_j2cmidj', templateParams, "6UjvitrsTssNlFnSa").then(
-    //                 (response) => {
-    //                     console.log('SUCCESS!', response.status, response.text);
-    //                     document.getElementById('infoName').value = "";
-    //                     document.getElementById('infoEmail').value = "";
-    //                     document.getElementById('infoMessage').value = "";
-    //                 },
-    //                 (error) => {
-    //                     console.log('FAILED...', error);
-    //                 },
-    //             );
-    //         }
-    //     }, 1000);
-        
-    // }
+
+    return isValid;
+}
+
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function sendEmail(event) {
+    event.preventDefault();
+
+    if (!validateForm()) {
+        return;
+    }
+
+    emailjs.init({
+        publicKey: "6UjvitrsTssNlFnSa",
+    });
+
+    let infoFirstName = document.getElementById('infoFirstName').value.trim();
+    let infoLastName = document.getElementById('infoLastName').value.trim();
+    let infoEmail = document.getElementById('infoEmail').value.trim();
+    let infoMessage = document.getElementById('infoMessage').value.trim();
+
+    let templateParams = {
+        from_name: `${infoFirstName} ${infoLastName}`,
+        from_email: infoEmail,
+        message: infoMessage,
+    };
+
+    emailjs.send('service_5n4ql5z', 'template_j2cmidj', templateParams, "6UjvitrsTssNlFnSa").then(
+        (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('infoFirstName').value = "";
+            document.getElementById('infoLastName').value = "";
+            document.getElementById('infoEmail').value = "";
+            document.getElementById('infoMessage').value = "";
+        },
+        (error) => {
+            console.log('FAILED...', error);
+        },
+    );
+}
+
     </script>
-    <script>
-        // let infoName = document.getElementById('infoName').value;
-        // let infoEmail = document.getElementById('infoEmail').value;
-        // let infoMessage = document.getElementById('infoMessage').value;
-        // let templateParams = {
-        //     from_name: infoName,
-        //     from_email: infoEmail,
-        //     message: infoMessage,
-        // };
-      
-        // emailjs.send('service_5n4ql5z', 'template_j2cmidj', templateParams)
-        //   .then(function (response) {
-        //     console.log('SUCCESS!', response.status, response.text);
-        //   }, function (error) {
-        //     console.log('FAILED...', error);
-        //   });
-    </script>
+    
 
+    <!-- ****************
+      After neccessary customization/modification, Please minify 
+      JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
+    **************** -->
+    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+    <!-- <link rel="stylesheet" href="demo/demo.css">
+    <script type="text/javascript" src="demo/styleswitcher.js"></script>
+    <script type="text/javascript" src="demo/demo.js"></script> -->
 </body>
-
 </html>
