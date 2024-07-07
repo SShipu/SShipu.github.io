@@ -79,6 +79,7 @@
 
         .toast {
             display: flex;
+            justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
             margin-bottom: 10px;
@@ -105,12 +106,24 @@
         }
 
         .toast .close-btn {
-            margin-left: auto;
+            width: 25px;
+            height: 25px;
+            border: 1px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
             background: none;
-            border: none;
+            /* border: none; */
             color: #fff;
             font-size: 16px;
             cursor: pointer;
+        }
+
+        .toast .close-btn:hover {
+            border: 1px solid #ff0000;
+            color: #ff0000;
         }
         .hidden {
             display: none !important;
@@ -614,7 +627,175 @@
             </div>
         </div>
     </section>
-    <script>
+    
+
+    <!--
+        ===================
+           FOOTER 1
+        ===================
+        -->
+    <footer class="mh-footer" id="mh-contact">
+        <div class="map-image image-bg">
+            <div class="container">
+                <div class="row section-separator">
+                    <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <h3>Contact Me</h3>
+                    </div>
+                    <div class="col-sm-12 mh-footer-address">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+                                    data-wow-duration="0.8s" data-wow-delay="0.3s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-location-arrow"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>Address</h4>
+                                        <address>
+                                            Mohammadpur, Dhaka - 1207,
+                                            Bangladesh <br />
+                                            <!-- Bangladesh -->
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+                                    data-wow-duration="0.8s" data-wow-delay="0.5s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>Email</h4>
+                                        <a href="mailto:yourmail@email.com">sshahariya@gmail.com</a><br />
+                                        <!-- <a href="mailto:yourmail@email.com">yourmail@email.com</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
+                                    data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                    <div class="each-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="each-info">
+                                        <h4>Phone</h4>
+                                        <a href="callto:(880)-8976-987">(+880)-1744612299</a><br />
+                                        <!-- <a href="callto:(880)-8976-987">(880)-8976-987</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                        <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator"
+                            onsubmit="sendEmail(event)">
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 mb-3">
+                                    <input name="first_name" class="contact-name form-control" id="infoFirstName"
+                                        type="text" placeholder="First Name" required />
+                                    <span id="nameError" class="error-message"></span>
+                                </div>
+                                <div class="col-md-6 col-sm-12 mb-3">
+                                    <input name="last_name" class="contact-email form-control" id="infoLastName"
+                                        type="text" placeholder="Last Name" required />
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <input name="email" class="contact-subject form-control" id="infoEmail" type="email"
+                                        placeholder="Your Email" required />
+                                    <span id="emailError" class="error-message"></span>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <textarea class="contact-message" id="infoMessage" rows="6"
+                                        placeholder="Your Message" required></textarea>
+                                    <span id="messageError" class="error-message"></span>
+                                </div>
+                                <div class="btn-form col-sm-12 col-md-6">
+                                    <button type="submit" class="btn btn-fill btn-block" id="form-submit">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="toast-container"></div>
+                    </div>
+
+                    <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="text-left text-xs-center">
+                                    <!-- <p>All right reserved Siful Islam @ 2018</p> -->
+                                    <p>
+                                        &copy; Copyright
+                                        <script>
+                                            document.write(
+                                                new Date().getFullYear()
+                                            );
+                                        </script>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="social-icon">
+                                    <li>
+                                        <a href="https://wwww.linkedin.com/in/md-saymon-shahariya-614aa9bb"
+                                            target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/sshipu" target="_blank"><i
+                                                class="fa fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+    ==============
+    * JS Files *
+    ==============
+    -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- jQuery -->
+    <script src="assets/plugins/js/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="assets/plugins/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/js/owl.carousel.js"></script>
+    <!-- validator -->
+    <script src="assets/plugins/js/validator.min.js"></script>
+    <!-- wow -->
+    <script src="assets/plugins/js/wow.min.js"></script>
+    <!-- mixin js-->
+    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
+    <!-- circle progress-->
+    <script src="assets/plugins/js/circle-progress.js"></script>
+    <!-- jquery nav -->
+    <script src="assets/plugins/js/jquery.nav.js"></script>
+    <!-- Fancybox js-->
+    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
+    <!-- isotope js-->
+    <script src="assets/plugins/js/isotope.pkgd.js"></script>
+    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
+    <!-- Map api -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script> -->
+    <!-- Custom Scripts-->
+    <!-- <script src="assets/js/map-init.js"></script> -->
+    <script src="assets/js/custom-scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        
+        /** PORTFOLIO STARTS */
         const portfolioData = [
             {
                 id: 1,
@@ -872,204 +1053,11 @@
                 });
             });
         });
+        
+        /** PORTFOLIO ENDS */
 
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     const seeMoreBtn = document.getElementById("form-submit");
-        //     const hiddenTestimonials = document.querySelectorAll(".grid-item.hide");
-
-        //     seeMoreBtn.addEventListener("click", function () {
-        //         hiddenTestimonials.forEach((testimonial) => {
-        //             testimonial.classList.toggle("d-none");
-        //         });
-
-        //         if (seeMoreBtn.innerText === "Load More") {
-        //             seeMoreBtn.innerText = "Load Less";
-        //         } else {
-        //             seeMoreBtn.innerText = "Load More";
-        //         }
-        //     });
-        // });
-
-        // const seeMoreBtn = document.getElementById("form-submit");
-        // seeMoreBtn.addEventListener("click", function() {
-        //     const hiddenItems = document.querySelectorAll(".grid-item.hide");
-        //     hiddenItems.forEach(item => {
-        //         item.classList.toggle("hide");
-        //     });
-
-        //     if (seeMoreBtn.innerText === "Load More") {
-        //         seeMoreBtn.innerText = "Load Less";
-        //     } else {
-        //         seeMoreBtn.innerText = "Load More";
-        //     }
-        // });
-    </script>
-
-    <!--
-        ===================
-           FOOTER 1
-        ===================
-        -->
-    <footer class="mh-footer" id="mh-contact">
-        <div class="map-image image-bg">
-            <div class="container">
-                <div class="row section-separator">
-                    <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                        <h3>Contact Me</h3>
-                    </div>
-                    <div class="col-sm-12 mh-footer-address">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4">
-                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
-                                    data-wow-duration="0.8s" data-wow-delay="0.3s">
-                                    <div class="each-icon">
-                                        <i class="fa fa-location-arrow"></i>
-                                    </div>
-                                    <div class="each-info">
-                                        <h4>Address</h4>
-                                        <address>
-                                            Mohammadpur, Dhaka - 1207,
-                                            Bangladesh <br />
-                                            <!-- Bangladesh -->
-                                        </address>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
-                                    data-wow-duration="0.8s" data-wow-delay="0.5s">
-                                    <div class="each-icon">
-                                        <i class="fa fa-envelope-o"></i>
-                                    </div>
-                                    <div class="each-info">
-                                        <h4>Email</h4>
-                                        <a href="mailto:yourmail@email.com">sshahariya@gmail.com</a><br />
-                                        <!-- <a href="mailto:yourmail@email.com">yourmail@email.com</a> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
-                                    data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <div class="each-icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <div class="each-info">
-                                        <h4>Phone</h4>
-                                        <a href="callto:(880)-8976-987">(+880)-1744612299</a><br />
-                                        <!-- <a href="callto:(880)-8976-987">(880)-8976-987</a> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                        <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator"
-                            onsubmit="sendEmail(event)">
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12 mb-3">
-                                    <input name="first_name" class="contact-name form-control" id="infoFirstName"
-                                        type="text" placeholder="First Name" required />
-                                    <span id="nameError" class="error-message"></span>
-                                </div>
-                                <div class="col-md-6 col-sm-12 mb-3">
-                                    <input name="last_name" class="contact-email form-control" id="infoLastName"
-                                        type="text" placeholder="Last Name" required />
-                                </div>
-                                <div class="col-sm-12 mb-3">
-                                    <input name="email" class="contact-subject form-control" id="infoEmail" type="email"
-                                        placeholder="Your Email" required />
-                                    <span id="emailError" class="error-message"></span>
-                                </div>
-                                <div class="col-sm-12 mb-3">
-                                    <textarea class="contact-message" id="infoMessage" rows="6"
-                                        placeholder="Your Message" required></textarea>
-                                    <span id="messageError" class="error-message"></span>
-                                </div>
-                                <div class="btn-form col-sm-12 col-md-6">
-                                    <button type="submit" class="btn btn-fill btn-block" id="form-submit">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="toast-container"></div>
-                    </div>
-
-                    <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="text-left text-xs-center">
-                                    <!-- <p>All right reserved Siful Islam @ 2018</p> -->
-                                    <p>
-                                        &copy; Copyright
-                                        <script>
-                                            document.write(
-                                                new Date().getFullYear()
-                                            );
-                                        </script>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="social-icon">
-                                    <li>
-                                        <a href="https://wwww.linkedin.com/in/md-saymon-shahariya-614aa9bb"
-                                            target="_blank"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/sshipu" target="_blank"><i
-                                                class="fa fa-github"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--
-    ==============
-    * JS Files *
-    ==============
-    -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <!-- jQuery -->
-    <script src="assets/plugins/js/jquery.min.js"></script>
-    <!-- popper -->
-    <script src="assets/plugins/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/plugins/js/owl.carousel.js"></script>
-    <!-- validator -->
-    <script src="assets/plugins/js/validator.min.js"></script>
-    <!-- wow -->
-    <script src="assets/plugins/js/wow.min.js"></script>
-    <!-- mixin js-->
-    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
-    <!-- circle progress-->
-    <script src="assets/plugins/js/circle-progress.js"></script>
-    <!-- jquery nav -->
-    <script src="assets/plugins/js/jquery.nav.js"></script>
-    <!-- Fancybox js-->
-    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
-    <!-- isotope js-->
-    <script src="assets/plugins/js/isotope.pkgd.js"></script>
-    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
-    <!-- Map api -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script> -->
-    <!-- Custom Scripts-->
-    <!-- <script src="assets/js/map-init.js"></script> -->
-    <script src="assets/js/custom-scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
+        /** CONTACTS FORM STARTS */
+        
         function validateForm() {
             let isValid = true;
 
@@ -1134,8 +1122,8 @@
             toastContainer.appendChild(toast);
 
             // Show toast
+            toast.classList.add("show");
             setTimeout(() => {
-                toast.classList.add("show");
             }, 100);
 
             // Auto remove toast after 3 seconds
@@ -1237,6 +1225,8 @@
         //     .getElementById("contactForm")
         //     .addEventListener("submit", sendEmail);
         // });
+
+        /** CONTACTS FORM ENDS */
     </script>
 
     <!-- ****************
