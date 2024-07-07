@@ -112,6 +112,9 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .hidden {
+            display: none !important;
+        }
     </style>
 </head>
 
@@ -710,7 +713,7 @@
                 ],
                 image: "assets/images/portfolio/admin.png",
                 imageV2: "",
-                liveUrl: "javascript:void(0)",
+                liveUrl: "",
             },
             {
                 id: 6,
@@ -767,7 +770,7 @@
                 ],
                 image: "assets/images/portfolio/erp.png",
                 imageV2: "",
-                liveUrl: "javascript:void(0)",
+                liveUrl: "",
             },
             {
                 id: 9,
@@ -806,7 +809,7 @@
                 ],
                 image: "assets/images/portfolio/pos.png",
                 imageV2: "",
-                liveUrl: "javascript:void(0)",
+                liveUrl: "",
             },
 
             // Add more items similarly
@@ -841,16 +844,14 @@
                     const data = portfolioData.find((d) => d.id === id);
 
                     if (data) {
-                        document.getElementById("modal-title").textContent =
-                            data.title;
+                        document.getElementById("modal-title").textContent = data.title;
                         document.getElementById(
                             "modal-description"
                         ).innerHTML = data.description;
                         if (!data.liveUrl.length) {
-                            document.getElementById(
-                                "modal-live-url"
-                            ).style.display = "none !important";
-                        }
+                            document.getElementById("modal-live-url").style.display = "none";
+                        } 
+                        else document.getElementById("modal-live-url").style.display = "inline-block";
 
                         const tagsContainer =
                             document.getElementById("modal-tags");
@@ -1236,16 +1237,6 @@
         //     .getElementById("contactForm")
         //     .addEventListener("submit", sendEmail);
         // });
-
-        $(document).ready(function () {
-            // show when page load
-            toastr.info("Page Loaded!");
-
-            $("#linkButton").click(function () {
-                // show when the button is clicked
-                toastr.success("Click Button");
-            });
-        });
     </script>
 
     <!-- ****************
